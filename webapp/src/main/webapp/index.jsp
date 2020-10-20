@@ -3,4 +3,4 @@
 <h2> CHanged password so got failure. No Failure w everything is automated using ansible play book </h2>
 
 
-<MARQUEE> AUTOMATION COMPLETED </MARQUEE>
+<MARQUEE> AUTOMATION COMPLETED CI + CD </MARQUEE>
