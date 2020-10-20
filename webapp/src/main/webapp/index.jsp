@@ -3,4 +3,4 @@
 <h2> CI+CD </h2>
 
 
-<MARQUEE> AUTOMATION COMPLETED CI + CD </MARQUEE>
+<MARQUEE> AUTOMATION COMPLETED CI + CD. If there is change in image it cant directly pull the image unless you enable versionaing. </MARQUEE>
