@@ -29,6 +29,19 @@
     </site>
   </distributionManagement>
 
+  <distributionManagement>
+    <repository>
+      <id>release</id>
+      <name>releases</name>
+      <url>http://localhost:8081/artifactory/libs-release-local</url>
+    </repository>
+    <snapshotRepository>
+      <id>snapshot</id>
+      <name>snapshots</name>
+      <url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <build>
     <plugins>
       <plugin>
@@ -40,8 +53,11 @@
       </plugin>
 
       <plugin>
-        <artifactId>maven-release-plugin</artifactId>
+        <groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-release-plugin</artifactId>
+	<version>2.5.1</version>
         <configuration>
+	  <tagNameFormat>v@{project.version}</tagNameFormat>
           <autoVersionSubmodules>true</autoVersionSubmodules>
         </configuration>
       </plugin>
@@ -207,10 +223,10 @@
   </dependencyManagement>
 
   <scm>
-    <connection>scm:git:git@github.com:jleetutorial/maven-project.git</connection>
-    <developerConnection>scm:git:git@github.com:jleetutorial/maven-project.git</developerConnection>
+    <connection>scm:git:git@github.com:rishabhworld1/hello-world.git</connection>
+    <developerConnection>scm:git:git@github.com:rishabhworld1/hello-world.git</developerConnection>
     <tag>HEAD</tag>
-    <url>http://github.com/jleetutorial/maven-project</url>
+    <url>git@github.com:rishabhworld1/hello-world.git</url>
   </scm>
 
   <prerequisites>
